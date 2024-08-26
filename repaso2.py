@@ -39,6 +39,9 @@ class Aerolinea:
         print("***Listado de aviones***")
         for avion in self.aviones:
             print(avion)
+
+    def itinerario(self,hsal,estado):
+        print(f"***Vuelo, Salida: {hsal} Estado{estado}")
 """
 while True:
     modelo = input("Ingrese el modelo del avión: ")
@@ -68,5 +71,9 @@ while True:
         break
     else:
         continue
+
+sal = input("Ingresa la hora de salida del vuelo: ")
+estado = input("¿En que estado se encuentra el vuelo?")
+aerol.itinerario(sal,estado)
     
     
